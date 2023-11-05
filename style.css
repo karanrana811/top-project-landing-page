@@ -1,5 +1,4 @@
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +6,8 @@ body {
     height: 100vh;
     justify-content: space-between;
 }
+
+/* general and hero styling  */
 
 h4 {
     margin: 0;
@@ -18,7 +19,7 @@ h4 {
     background-color: #1F2937;
 }
 
-.hero, .middle-information, .bottom-information, footer {
+.hero, .middle-information, .bottom-information, .quote, footer {
     padding: 0 10%;
     flex: 0 1 auto;
 }
@@ -59,4 +60,77 @@ h2 {
 li {
     list-style: none;
     padding: 0 0 0 1rem;
+}
+
+/* middle information styling */
+
+.middle-information {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.middle-information > h3 {
+    align-self: center;
+    margin: 0 0 2rem 0;
+}
+
+.figure-and-caption {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-around;
+}
+
+.empty-image {
+    background-color: red;
+    padding: 50px;
+}
+
+figure {
+    margin: 0;
+    flex: 0 1 50px;
+    flex-direction: column;
+}
+
+/* quote styling */
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote > .quote-para {
+    width: 50%;
+    margin: 2rem auto 0 auto;
+}
+
+.quote > .quote-author {
+    width: 50%;
+    text-align: right;
+    margin: 0 auto 2rem auto;
+    font-weight: bolder;
+}
+
+/* bottom-information styling */
+
+.bottom-information {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 2rem auto;
+    background-color: #3882f6;
+    border-radius: 1rem;
+    
+}
+
+.bottom-info-text {
+    color: white;
+}
+
+.bottom-information > button {
+    align-self: center;
+    padding: 0.5rem;
+    background-color: #3882f6;
+    border: white 1px solid;
+    border-radius: 8px;
+    color: white;
 }
